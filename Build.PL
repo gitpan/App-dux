@@ -12,12 +12,12 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "See bin/dux",
+  "dist_abstract" => "Run Data::Unixish function on the command-line",
   "dist_author" => [
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "App-dux",
-  "dist_version" => "1.23",
+  "dist_version" => "1.24",
   "license" => "perl",
   "module_name" => "App::dux",
   "recommends" => {},

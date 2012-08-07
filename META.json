@@ -1,5 +1,5 @@
 {
-   "abstract" : "See bin/dux",
+   "abstract" : "Run Data::Unixish function on the command-line",
    "author" : [
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
@@ -40,6 +40,6 @@
          "url" : "http://github.com/sharyanto/perl-App-dux"
       }
    },
-   "version" : "1.23"
+   "version" : "1.24"
 }
 

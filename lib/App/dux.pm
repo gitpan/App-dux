@@ -1,20 +1,20 @@
 package App::dux;
 
-our $VERSION = '1.23'; # VERSION
+our $VERSION = '1.24'; # VERSION
 
 1;
-# ABSTRACT: See bin/dux
+# ABSTRACT: Run Data::Unixish function on the command-line
 
 __END__
 =pod
 
 =head1 NAME
 
-App::dux - See bin/dux
+App::dux - Run Data::Unixish function on the command-line
 
 =head1 VERSION
 
-version 1.23
+version 1.24
 
 =head1 AUTHOR
 
