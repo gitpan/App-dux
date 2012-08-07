@@ -1,0 +1,45 @@
+{
+   "abstract" : "See bin/dux",
+   "author" : [
+      "Steven Haryanto <stevenharyanto@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "App-dux",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Data::Unixish" : 0,
+            "Perinci::CmdLine" : "0.53",
+            "Tie::Diamond" : "0.03",
+            "perl" : "5.010000"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://metacpan.org/dist/App-dux",
+      "repository" : {
+         "url" : "http://github.com/sharyanto/perl-App-dux"
+      }
+   },
+   "version" : "1.23"
+}
+

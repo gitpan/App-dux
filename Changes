@@ -1,0 +1,6 @@
+Revision history for App-dux
+
+1.23    2012-08-07 (SHARYANTO)
+
+        First version. Split from Data-Unixish to resolve circular dependency
+        problem (reported by Dagfinn Ilmari Mannsåker).
