@@ -15,10 +15,11 @@ meta-spec:
 name: App-dux
 requires:
   Data::Unixish: 0
+  Module::List: 0
   Perinci::CmdLine: 0.53
   Tie::Diamond: 0.03
   perl: 5.010001
 resources:
   homepage: http://metacpan.org/dist/App-dux
   repository: http://github.com/sharyanto/perl-App-dux
-version: 1.25
+version: 1.26

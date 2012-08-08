@@ -2,7 +2,7 @@ package Perinci::CmdLine::dux;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.25'; # VERSION
+our $VERSION = '1.26'; # VERSION
 
 sub run_subcommand {
     require Tie::Diamond;
@@ -37,7 +37,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.25
+version 1.26
 
 =head1 AUTHOR
 
