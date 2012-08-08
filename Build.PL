@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "App-dux",
-  "dist_version" => "1.24",
+  "dist_version" => "1.25",
   "license" => "perl",
   "module_name" => "App::dux",
   "recommends" => {},
@@ -26,7 +26,7 @@ my %module_build_args = (
     "Data::Unixish" => 0,
     "Perinci::CmdLine" => "0.53",
     "Tie::Diamond" => "0.03",
-    "perl" => "5.010000"
+    "perl" => "5.010001"
   },
   "script_files" => [
     "bin/dux"

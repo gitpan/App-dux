@@ -29,7 +29,7 @@
             "Data::Unixish" : 0,
             "Perinci::CmdLine" : "0.53",
             "Tie::Diamond" : "0.03",
-            "perl" : "5.010000"
+            "perl" : "5.010001"
          }
       }
    },
@@ -40,6 +40,6 @@
          "url" : "http://github.com/sharyanto/perl-App-dux"
       }
    },
-   "version" : "1.24"
+   "version" : "1.25"
 }
 

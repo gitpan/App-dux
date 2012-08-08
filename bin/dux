@@ -7,10 +7,14 @@ use Log::Any '$log';
 
 BEGIN { $ENV{LOG} //= 0 } # speedup startup
 
+# just to force installation of this dist and avoid complaints from
+# scan-for-extraneous-or-missing-deps script.
+use Data::Unixish;
+
 use Getopt::Long;
 use Perinci::CmdLine::dux;
 
-our $VERSION = '1.24'; # VERSION
+our $VERSION = '1.25'; # VERSION
 
 my %opts = (
     library => [],
@@ -76,7 +80,7 @@ dux - Run dux function on the command-line
 
 =head1 VERSION
 
-version 1.24
+version 1.25
 
 =head1 SYNOPSIS
 
