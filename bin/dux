@@ -7,13 +7,9 @@ use Log::Any '$log';
 
 BEGIN { $ENV{LOG} //= 0 } # speedup startup
 
-# just to force installation of this dist and avoid complaints from
-# scan-for-extraneous-or-missing-deps script.
-use Data::Unixish;
-
 use Getopt::Long;
 
-our $VERSION = '1.27'; # VERSION
+our $VERSION = '1.28'; # VERSION
 
 my %opts = (
     library => [],
@@ -69,6 +65,11 @@ require Perinci::CmdLine::dux;
 my $cmd = Perinci::CmdLine::dux->new;
 
 my $pkg = shift @ARGV;
+require Module::Path;
+die "Unknown dux function $pkg, ".
+    "please see list of available functions using `$me -l`\n" unless
+    Module::Path::module_path("Data::Unixish::$pkg");
+
 $pkg =~ s!::!/!g;
 my $func = $pkg; $func =~ s!.+/!!;
 my $url  = "/Data/Unixish/$pkg/$func";
@@ -89,11 +90,16 @@ dux - Run dux function on the command-line
 
 =head1 VERSION
 
-version 1.27
+version 1.28
 
 =head1 SYNOPSIS
 
 Type C<dux --help> for more help.
+
+=head1 DESCRIPTION
+
+By default this script sets LOG environment to 0. If you want to enable logging,
+you have to specifically set LOG=1.
 
 =head1 SEE ALSO
 
