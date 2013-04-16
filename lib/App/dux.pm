@@ -1,6 +1,6 @@
 package App::dux;
 
-our $VERSION = '1.29'; # VERSION
+our $VERSION = '1.30'; # VERSION
 
 1;
 # ABSTRACT: Run Data::Unixish function on the command-line
@@ -14,7 +14,7 @@ App::dux - Run Data::Unixish function on the command-line
 
 =head1 VERSION
 
-version 1.29
+version 1.30
 
 =head1 AUTHOR
 

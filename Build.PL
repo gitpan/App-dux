@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "App-dux",
-  "dist_version" => "1.29",
+  "dist_version" => "1.30",
   "license" => "perl",
   "module_name" => "App::dux",
   "recommends" => {},
