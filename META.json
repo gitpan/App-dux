@@ -31,11 +31,12 @@
       },
       "runtime" : {
          "requires" : {
-            "Data::Unixish" : "0",
+            "Data::Unixish" : "1.31",
             "Module::List" : "0",
-            "Perinci::CmdLine" : "0.72",
+            "Perinci::CmdLine" : "0.73",
             "Perinci::Sub::Wrapper" : "0.41",
             "Tie::Diamond" : "0.03",
+            "Tie::Simple" : "0",
             "perl" : "5.010001"
          }
       }
@@ -47,6 +48,6 @@
          "url" : "http://github.com/sharyanto/perl-App-dux"
       }
    },
-   "version" : "1.31"
+   "version" : "1.32"
 }
 

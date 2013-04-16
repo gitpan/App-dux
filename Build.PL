@@ -17,17 +17,18 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "App-dux",
-  "dist_version" => "1.31",
+  "dist_version" => "1.32",
   "license" => "perl",
   "module_name" => "App::dux",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Data::Unixish" => 0,
+    "Data::Unixish" => "1.31",
     "Module::List" => 0,
-    "Perinci::CmdLine" => "0.72",
+    "Perinci::CmdLine" => "0.73",
     "Perinci::Sub::Wrapper" => "0.41",
     "Tie::Diamond" => "0.03",
+    "Tie::Simple" => 0,
     "perl" => "5.010001"
   },
   "script_files" => [
