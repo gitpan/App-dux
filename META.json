@@ -33,7 +33,7 @@
          "requires" : {
             "Data::Unixish" : "0",
             "Module::List" : "0",
-            "Perinci::CmdLine" : "0.53",
+            "Perinci::CmdLine" : "0.72",
             "Perinci::Sub::Wrapper" : "0.41",
             "Tie::Diamond" : "0.03",
             "perl" : "5.010001"
@@ -47,6 +47,6 @@
          "url" : "http://github.com/sharyanto/perl-App-dux"
       }
    },
-   "version" : "1.30"
+   "version" : "1.31"
 }
 

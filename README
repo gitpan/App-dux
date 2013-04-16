@@ -2,7 +2,7 @@ NAME
     App::dux - Run Data::Unixish function on the command-line
 
 VERSION
-    version 1.30
+    version 1.31
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
