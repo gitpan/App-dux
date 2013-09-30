@@ -4,13 +4,12 @@ use parent qw(Perinci::CmdLine::dux::I18N Perinci::CmdLine::I18N::en);
 use Locale::Maketext::Lexicon::Gettext;
 our %Lexicon = %{ Locale::Maketext::Lexicon::Gettext->parse(<DATA>) };
 
-our $VERSION = '1.33'; # VERSION
+our $VERSION = '1.34'; # VERSION
 
 #use Data::Dump; dd \%Lexicon;
 
 1;
 # ABSTRACT: English translation for Perinci::CmdLine::dux
-
 
 =pod
 
@@ -20,7 +19,7 @@ Perinci::CmdLine::dux::I18N::en - English translation for Perinci::CmdLine::dux
 
 =head1 VERSION
 
-version 1.33
+version 1.34
 
 =head1 AUTHOR
 
@@ -34,7 +33,6 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
 
 __DATA__
 

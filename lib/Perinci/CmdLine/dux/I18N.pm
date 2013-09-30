@@ -1,12 +1,13 @@
 package Perinci::CmdLine::dux::I18N;
 use parent 'Perinci::CmdLine::I18N';
 
-our $VERSION = '1.33'; # VERSION
+our $VERSION = '1.34'; # VERSION
 
 1;
 # ABSTRACT: Project class for Perinci::CmdLine::dux
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -15,7 +16,7 @@ Perinci::CmdLine::dux::I18N - Project class for Perinci::CmdLine::dux
 
 =head1 VERSION
 
-version 1.33
+version 1.34
 
 =head1 AUTHOR
 
@@ -29,4 +30,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

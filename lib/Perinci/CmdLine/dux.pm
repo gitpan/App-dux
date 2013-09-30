@@ -3,7 +3,7 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.33'; # VERSION
+our $VERSION = '1.34'; # VERSION
 
 sub run_subcommand {
     my $self = shift;
@@ -48,6 +48,8 @@ sub run_subcommand {
         $self->{_args}{out} = [];
     }
 
+    $self->{_args}{-dux_cli} = 1;
+
     $self->SUPER::run_subcommand(@_);
 }
 
@@ -69,9 +71,8 @@ sub format_result {
 1;
 # ABSTRACT: Perinci::CmdLine subclass for dux cli
 
-
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -80,12 +81,15 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.33
+version 1.34
 
 =head1 DESCRIPTION
 
-This subclass sets `in` and `out` arguments for the dux function, and displays
-the resulting `out` array.
+This subclass sets C<in> and C<out> arguments for the dux function, and displays
+the resulting <out> array.
+
+It also add a special flag function argument C<< -dux_cli => 1 >> so the
+function is aware it is being run through the dux CLI application.
 
 =head1 SEE ALSO
 
@@ -103,4 +107,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

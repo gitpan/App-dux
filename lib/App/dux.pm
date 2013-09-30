@@ -1,11 +1,12 @@
 package App::dux;
 
-our $VERSION = '1.33'; # VERSION
+our $VERSION = '1.34'; # VERSION
 
 1;
 # ABSTRACT: Run Data::Unixish function on the command-line
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -14,7 +15,7 @@ App::dux - Run Data::Unixish function on the command-line
 
 =head1 VERSION
 
-version 1.33
+version 1.34
 
 =head1 AUTHOR
 
@@ -28,4 +29,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
