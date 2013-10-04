@@ -9,7 +9,7 @@ BEGIN { $ENV{LOG} //= 0 } # speedup startup
 
 use Getopt::Long;
 
-our $VERSION = '1.34'; # VERSION
+our $VERSION = '1.35'; # VERSION
 
 my %opts = (
     library => [],
@@ -91,7 +91,7 @@ dux - Run dux function on the command-line
 
 =head1 VERSION
 
-version 1.34
+version 1.35
 
 =head1 SYNOPSIS
 

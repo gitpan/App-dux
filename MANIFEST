@@ -12,6 +12,7 @@ lib/App/dux.pm
 lib/Perinci/CmdLine/dux.pm
 lib/Perinci/CmdLine/dux/I18N.pm
 lib/Perinci/CmdLine/dux/I18N/en.pm
+lib/Perinci/CmdLine/dux/I18N/fr.pm
 lib/Perinci/CmdLine/dux/I18N/id.pm
 t/00-compile.t
 t/release-pod-coverage.t

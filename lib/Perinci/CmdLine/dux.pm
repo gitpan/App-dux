@@ -3,7 +3,13 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.34'; # VERSION
+our $VERSION = '1.35'; # VERSION
+
+# we don't have our own color theme class
+has color_theme_class_prefix => (
+    is => 'rw',
+    default => sub { 'Perinci::CmdLine::ColorTheme' },
+);
 
 sub run_subcommand {
     my $self = shift;
@@ -81,7 +87,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.34
+version 1.35
 
 =head1 DESCRIPTION
 
@@ -90,6 +96,8 @@ the resulting <out> array.
 
 It also add a special flag function argument C<< -dux_cli => 1 >> so the
 function is aware it is being run through the dux CLI application.
+
+=for Pod::Coverage .+
 
 =head1 SEE ALSO
 

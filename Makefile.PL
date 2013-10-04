@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Data::Unixish" => "1.31",
     "Module::List" => 0,
-    "Perinci::CmdLine" => "0.73",
+    "Perinci::CmdLine" => "0.93",
     "Perinci::Sub::Wrapper" => "0.41",
     "Tie::Diamond" => "0.03",
     "Tie::Simple" => 0
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.34",
+  "VERSION" => "1.35",
   "test" => {
     "TESTS" => "t/*.t"
   }

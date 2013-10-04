@@ -1,7 +1,7 @@
 package Perinci::CmdLine::dux::I18N;
 use parent 'Perinci::CmdLine::I18N';
 
-our $VERSION = '1.34'; # VERSION
+our $VERSION = '1.35'; # VERSION
 
 1;
 # ABSTRACT: Project class for Perinci::CmdLine::dux
@@ -16,7 +16,7 @@ Perinci::CmdLine::dux::I18N - Project class for Perinci::CmdLine::dux
 
 =head1 VERSION
 
-version 1.34
+version 1.35
 
 =head1 AUTHOR
 

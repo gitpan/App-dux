@@ -1,5 +1,7 @@
-package Perinci::CmdLine::dux::I18N::en;
-use parent qw(Perinci::CmdLine::dux::I18N Perinci::CmdLine::I18N::en);
+use utf8;
+
+package Perinci::CmdLine::dux::I18N::fr;
+use parent qw(Perinci::CmdLine::dux::I18N Perinci::CmdLine::I18N::fr);
 
 use Locale::Maketext::Lexicon::Gettext;
 our %Lexicon = %{ Locale::Maketext::Lexicon::Gettext->parse(<DATA>) };
@@ -9,13 +11,13 @@ our $VERSION = '1.35'; # VERSION
 #use Data::Dump; dd \%Lexicon;
 
 1;
-# ABSTRACT: English translation for Perinci::CmdLine::dux
+# ABSTRACT: French translation for Perinci::CmdLine::dux
 
 =pod
 
 =head1 NAME
 
-Perinci::CmdLine::dux::I18N::en - English translation for Perinci::CmdLine::dux
+Perinci::CmdLine::dux::I18N::fr - French translation for Perinci::CmdLine::dux
 
 =head1 VERSION
 
