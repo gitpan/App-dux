@@ -10,7 +10,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
+generated_by: 'Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -25,6 +25,7 @@ requires:
   Tie::Simple: 0
   perl: 5.010001
 resources:
-  homepage: http://metacpan.org/release/App-dux
-  repository: http://github.com/sharyanto/perl-App-dux
-version: 1.35
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
+  homepage: https://metacpan.org/release/App-dux
+  repository: git://github.com/sharyanto/perl-App-dux.git
+version: 1.36

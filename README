@@ -2,7 +2,25 @@ NAME
     App::dux - Run Data::Unixish function on the command-line
 
 VERSION
-    version 1.35
+    version 1.36
+
+DESCRIPTION
+FUNCTIONS
+    None are exported by default, but they are exportable.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/App-dux>.
+
+SOURCE
+    Source repository is at HASH(0x44c43f8).
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
