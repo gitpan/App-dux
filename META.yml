@@ -28,4 +28,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
   homepage: https://metacpan.org/release/App-dux
   repository: git://github.com/sharyanto/perl-App-dux.git
-version: 1.36
+version: 1.37

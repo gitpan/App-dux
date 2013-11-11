@@ -6,7 +6,7 @@ use parent qw(Perinci::CmdLine::dux::I18N Perinci::CmdLine::I18N::fr);
 use Locale::Maketext::Lexicon::Gettext;
 our %Lexicon = %{ Locale::Maketext::Lexicon::Gettext->parse(<DATA>) };
 
-our $VERSION = '1.36'; # VERSION
+our $VERSION = '1.37'; # VERSION
 
 #use Data::Dump; dd \%Lexicon;
 
@@ -23,7 +23,7 @@ Perinci::CmdLine::dux::I18N::fr - French translation for Perinci::CmdLine::dux
 
 =head1 VERSION
 
-version 1.36
+version 1.37
 
 =head1 DESCRIPTION
 
@@ -38,12 +38,12 @@ Please visit the project's homepage at L<https://metacpan.org/release/App-dux>.
 
 =head1 SOURCE
 
-Source repository is at L<HASH(0x44c43f8)>.
+Source repository is at L<https://github.com/sharyanto/perl-App-dux>.
 
 =head1 BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux>
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired
