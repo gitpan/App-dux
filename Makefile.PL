@@ -26,7 +26,7 @@ my %WriteMakefileArgs = (
     "Module::List" => 0,
     "Perinci::CmdLine" => "0.93",
     "Perinci::Sub::Wrapper" => "0.41",
-    "Tie::Diamond" => "0.03",
+    "Tie::Diamond" => "0.05",
     "Tie::Simple" => 0
   },
   "TEST_REQUIRES" => {
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "IPC::Open3" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.37",
+  "VERSION" => "1.38",
   "test" => {
     "TESTS" => "t/*.t"
   }

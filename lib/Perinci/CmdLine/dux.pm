@@ -3,7 +3,7 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.37'; # VERSION
+our $VERSION = '1.38'; # VERSION
 
 # we don't have our own color theme class
 sub color_theme_class_prefix { 'Perinci::CmdLine::ColorTheme' }
@@ -11,10 +11,12 @@ sub color_theme_class_prefix { 'Perinci::CmdLine::ColorTheme' }
 sub run_subcommand {
     my $self = shift;
 
+    binmode(STDOUT, ":utf8");
+
     # set `in` argument for the dux function
     my $chomp = $self->{_meta}{"x.dux.strip_newlines"} // 1;
     require Tie::Diamond;
-    tie my(@diamond), 'Tie::Diamond', {chomp=>$chomp} or die;
+    tie my(@diamond), 'Tie::Diamond', {chomp=>$chomp, utf8=>1} or die;
     $self->{_args}{in}  = \@diamond;
 
     # set `out` argument for the dux function
@@ -86,7 +88,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.37
+version 1.38
 
 =head1 DESCRIPTION
 
