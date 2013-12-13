@@ -3,7 +3,7 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.38'; # VERSION
+our $VERSION = '1.39'; # VERSION
 
 # we don't have our own color theme class
 sub color_theme_class_prefix { 'Perinci::CmdLine::ColorTheme' }
@@ -80,7 +80,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -88,7 +88,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.38
+version 1.39
 
 =head1 DESCRIPTION
 
@@ -97,11 +97,6 @@ the resulting <out> array.
 
 It also add a special flag function argument C<< -dux_cli => 1 >> so the
 function is aware it is being run through the dux CLI application.
-
-=head1 FUNCTIONS
-
-
-None are exported by default, but they are exportable.
 
 =for Pod::Coverage .+
 
@@ -119,8 +114,7 @@ Source repository is at L<https://github.com/sharyanto/perl-App-dux>.
 
 =head1 BUGS
 
-Please report any bugs or feature requests on the bugtracker website
-L<https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux>
+Please report any bugs or feature requests on the bugtracker website L<https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux>
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired

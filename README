@@ -2,11 +2,7 @@ NAME
     App::dux - Run Data::Unixish function on the command-line
 
 VERSION
-    version 1.38
-
-DESCRIPTION
-FUNCTIONS
-    None are exported by default, but they are exportable.
+    version 1.39
 
 HOMEPAGE
     Please visit the project's homepage at
