@@ -3,12 +3,12 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.39'; # VERSION
+our $VERSION = '1.40'; # VERSION
 
 # we don't have our own color theme class
 sub color_theme_class_prefix { 'Perinci::CmdLine::ColorTheme' }
 
-sub run_subcommand {
+sub run_call {
     my $self = shift;
 
     binmode(STDOUT, ":utf8");
@@ -55,7 +55,7 @@ sub run_subcommand {
 
     $self->{_args}{-dux_cli} = 1;
 
-    $self->SUPER::run_subcommand(@_);
+    $self->SUPER::run_call(@_);
 }
 
 sub format_result {
@@ -88,7 +88,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.39
+version 1.40
 
 =head1 DESCRIPTION
 
@@ -126,7 +126,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Steven Haryanto.
+This software is copyright (c) 2014 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

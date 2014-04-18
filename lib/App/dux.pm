@@ -1,6 +1,6 @@
 package App::dux;
 
-our $VERSION = '1.39'; # VERSION
+our $VERSION = '1.40'; # VERSION
 
 1;
 # ABSTRACT: Run Data::Unixish function on the command-line
@@ -17,7 +17,7 @@ App::dux - Run Data::Unixish function on the command-line
 
 =head1 VERSION
 
-version 1.39
+version 1.40
 
 =head1 HOMEPAGE
 
@@ -41,7 +41,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Steven Haryanto.
+This software is copyright (c) 2014 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
