@@ -3,7 +3,7 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.41'; # VERSION
+our $VERSION = '1.42'; # VERSION
 
 # we don't have our own color theme class
 sub color_theme_class_prefix { 'Perinci::CmdLine::ColorTheme' }
@@ -91,7 +91,11 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-version 1.41
+version 1.42
+
+=head1 RELEASE DATE
+
+2014-04-24
 
 =head1 DESCRIPTION
 
