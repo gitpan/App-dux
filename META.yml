@@ -28,10 +28,10 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
   homepage: https://metacpan.org/release/App-dux
   repository: git://github.com/sharyanto/perl-App-dux.git
-version: '1.42'
+version: '1.43'
 x_Dist_Zilla:
   perl:
-    version: '5.018002'
+    version: '5.018001'
   plugins:
     -
       class: Dist::Zilla::Plugin::GatherDir
@@ -240,7 +240,7 @@ x_Dist_Zilla:
           script_finder:
             - ':ExecFiles'
       name: '@Author::SHARYANTO/Test::Compile'
-      version: '2.040'
+      version: '2.039'
     -
       class: Dist::Zilla::Plugin::Test::Rinci
       name: '@Author::SHARYANTO/Test::Rinci'

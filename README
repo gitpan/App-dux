@@ -2,10 +2,10 @@ NAME
     App::dux - Run Data::Unixish function on the command-line
 
 VERSION
-    version 1.42
+    version 1.43
 
 RELEASE DATE
-    2014-04-24
+    2014-04-25
 
 HOMEPAGE
     Please visit the project's homepage at
