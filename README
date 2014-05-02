@@ -2,7 +2,7 @@ NAME
     App::dux - Run Data::Unixish function on the command-line
 
 VERSION
-    This document describes version 1.44 of App::dux (from Perl distribution
+    This document describes version 1.45 of App::dux (from Perl distribution
     App-dux), released on 2014-05-02.
 
 HOMEPAGE

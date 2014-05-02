@@ -3,7 +3,7 @@ use 5.010;
 use Moo;
 extends 'Perinci::CmdLine';
 
-our $VERSION = '1.44'; # VERSION
+our $VERSION = '1.45'; # VERSION
 our $DATE = '2014-05-02'; # DATE
 
 # we don't have our own color theme class
@@ -92,7 +92,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-This document describes version 1.44 of Perinci::CmdLine::dux (from Perl distribution App-dux), released on 2014-05-02.
+This document describes version 1.45 of Perinci::CmdLine::dux (from Perl distribution App-dux), released on 2014-05-02.
 
 =head1 DESCRIPTION
 

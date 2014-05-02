@@ -60,7 +60,7 @@
          "web" : "https://github.com/sharyanto/perl-App-dux"
       }
    },
-   "version" : "1.44",
+   "version" : "1.45",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018001"
