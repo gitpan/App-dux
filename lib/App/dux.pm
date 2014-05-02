@@ -1,6 +1,6 @@
 package App::dux;
 
-our $VERSION = '1.43'; # VERSION
+our $VERSION = '1.44'; # VERSION
 
 1;
 # ABSTRACT: Run Data::Unixish function on the command-line
@@ -17,11 +17,7 @@ App::dux - Run Data::Unixish function on the command-line
 
 =head1 VERSION
 
-version 1.43
-
-=head1 RELEASE DATE
-
-2014-04-25
+This document describes version 1.44 of App::dux (from Perl distribution App-dux), released on 2014-05-02.
 
 =head1 HOMEPAGE
 

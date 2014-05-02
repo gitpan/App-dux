@@ -23,12 +23,13 @@ requires:
   Perinci::Sub::Wrapper: '0.51'
   Tie::Diamond: '0.05'
   Tie::Simple: '0'
+  experimental: '0'
   perl: '5.010001'
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
   homepage: https://metacpan.org/release/App-dux
   repository: git://github.com/sharyanto/perl-App-dux.git
-version: '1.43'
+version: '1.44'
 x_Dist_Zilla:
   perl:
     version: '5.018001'
@@ -141,10 +142,6 @@ x_Dist_Zilla:
               name: '@Author::SHARYANTO/Version'
               version: '4.006'
             -
-              class: Pod::Weaver::Section::ReleaseDate
-              name: '@Author::SHARYANTO/ReleaseDate'
-              version: '0.01'
-            -
               class: Pod::Weaver::Section::Region
               name: '@Author::SHARYANTO/prelude'
               version: '4.006'
@@ -175,7 +172,7 @@ x_Dist_Zilla:
             -
               class: Pod::Weaver::Plugin::Perinci
               name: '@Author::SHARYANTO/Perinci'
-              version: '0.14'
+              version: '0.15'
             -
               class: Pod::Weaver::Section::Leftovers
               name: '@Author::SHARYANTO/Leftovers'
@@ -225,7 +222,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Rinci::Validate
       name: '@Author::SHARYANTO/Rinci::Validate'
-      version: '0.12'
+      version: '0.13'
     -
       class: Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion
       name: '@Author::SHARYANTO/SHARYANTO::OurPkgVersion'
