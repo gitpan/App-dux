@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!perl
 
 use 5.010001;
 use strict;
@@ -10,8 +10,8 @@ BEGIN { $ENV{LOG} //= 0 } # speedup startup
 
 use Getopt::Long;
 
-our $VERSION = '1.45'; # VERSION
-our $DATE = '2014-05-02'; # DATE
+our $VERSION = '1.46'; # VERSION
+our $DATE = '2014-09-16'; # DATE
 
 my %opts = (
     library => [],
@@ -31,9 +31,11 @@ GetOptions(
 my $me = $0; $me =~ s!.+/!!;
 
 if ($opts{version}) {
-    print "$me version $main::VERSION\n";
+    no warnings 'once';
+    print "$me version $main::VERSION ($main::DATE)\n";
     require Data::Unixish;
-    print "  Data::Unixish version version $Data::Unixish::VERSION\n";
+    print "  Data::Unixish version $Data::Unixish::VERSION".
+        " ($Data::Unixish::DATE)\n";
     exit 0;
 } elsif ($opts{list}) {
     require Module::List;
@@ -54,8 +56,10 @@ if ($opts{version}) {
                 $summary  = $meta->{summary};
                 $is_itemfunc = 'itemfunc' ~~ @$tags;
                 $is_unsafe   = 'unsafe' ~~ @$tags;
+            } else {
+                $tags = [];
             }
-            my $tags_s = join(",", @$tags);
+            my $tags_s = join(",", sort @$tags);
             say sprintf(
                 "%s%s------ %-16s %8s %s",
                 ($is_itemfunc ? "i" : defined($is_itemfunc) ? "-" : "?"),
@@ -126,7 +130,7 @@ dux - Run dux function on the command-line
 
 =head1 VERSION
 
-This document describes version 1.45 of dux (from Perl distribution App-dux), released on 2014-05-02.
+This document describes version 1.46 of dux (from Perl distribution App-dux), released on 2014-09-16.
 
 =head1 SYNOPSIS
 
@@ -181,7 +185,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/App-dux>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-App-dux>.
+Source repository is at L<https://github.com/perlancar/perl-App-dux>.
 
 =head1 BUGS
 
@@ -193,11 +197,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
