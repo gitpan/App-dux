@@ -31,7 +31,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=App-dux
   homepage: https://metacpan.org/release/App-dux
   repository: git://github.com/perlancar/perl-App-dux.git
-version: '1.46'
+version: '1.47'
 x_Dist_Zilla:
   perl:
     version: '5.018002'
@@ -224,7 +224,7 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Rinci::Validate
       name: '@Author::PERLANCAR/Rinci::Validate'
-      version: '0.18'
+      version: '0.19'
     -
       class: Dist::Zilla::Plugin::SetScriptShebang
       name: '@Author::PERLANCAR/SetScriptShebang'

@@ -1,7 +1,7 @@
 package Perinci::CmdLine::dux;
 
-our $DATE = '2014-09-16'; # DATE
-our $VERSION = '1.46'; # VERSION
+our $DATE = '2014-10-30'; # DATE
+our $VERSION = '1.47'; # VERSION
 
 use 5.010;
 use Moo;
@@ -40,7 +40,8 @@ sub run_call {
         }
         $streamo = 1 if $fmt eq 'text-simple' || $fmt eq 'text' && !$iactive;
     }
-    #say "fmt=$fmt, streamo=$streamo";
+
+    #say "fmt=$fmt, streamo=".($streamo//0);
     if ($streamo) {
         die "Can't format stream as $fmt, please use --format text-simple\n"
             unless $fmt =~ /^text/;
@@ -67,6 +68,11 @@ sub run_call {
 sub hook_format_result {
     my ($self, $r) = @_;
 
+    # turn off streaming if response is an error response
+    if ($r->{res}[0] !~ /\A2/) {
+        $r->{is_stream_output} = 0;
+    }
+
     return '' if $r->{is_stream_output};
 
     if ($r->{res} && $r->{res}[0] == 200 && $r->{args}{-dux_cli}) {
@@ -91,7 +97,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-This document describes version 1.46 of Perinci::CmdLine::dux (from Perl distribution App-dux), released on 2014-09-16.
+This document describes version 1.47 of Perinci::CmdLine::dux (from Perl distribution App-dux), released on 2014-10-30.
 
 =head1 DESCRIPTION
 

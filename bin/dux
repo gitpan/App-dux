@@ -10,8 +10,8 @@ BEGIN { $ENV{LOG} //= 0 } # speedup startup
 
 use Getopt::Long;
 
-our $VERSION = '1.46'; # VERSION
-our $DATE = '2014-09-16'; # DATE
+our $VERSION = '1.47'; # VERSION
+our $DATE = '2014-10-30'; # DATE
 
 my %opts = (
     library => [],
@@ -130,7 +130,7 @@ dux - Run dux function on the command-line
 
 =head1 VERSION
 
-This document describes version 1.46 of dux (from Perl distribution App-dux), released on 2014-09-16.
+This document describes version 1.47 of dux (from Perl distribution App-dux), released on 2014-10-30.
 
 =head1 SYNOPSIS
 
