@@ -1,6 +1,6 @@
 package App::dux;
 
-our $VERSION = '1.47'; # VERSION
+our $VERSION = '1.48'; # VERSION
 
 1;
 # ABSTRACT: Run Data::Unixish function on the command-line
@@ -17,7 +17,7 @@ App::dux - Run Data::Unixish function on the command-line
 
 =head1 VERSION
 
-This document describes version 1.47 of App::dux (from Perl distribution App-dux), released on 2014-10-30.
+This document describes version 1.48 of App::dux (from Perl distribution App-dux), released on 2014-12-27.
 
 =head1 HOMEPAGE
 
@@ -25,7 +25,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/App-dux>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/perlancar/perl-App-dux>.
+Source repository is at L<https://github.com/sharyanto/perl-App-dux>.
 
 =head1 BUGS
 

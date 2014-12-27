@@ -1,7 +1,7 @@
 package Perinci::CmdLine::dux;
 
-our $DATE = '2014-10-30'; # DATE
-our $VERSION = '1.47'; # VERSION
+our $DATE = '2014-12-27'; # DATE
+our $VERSION = '1.48'; # VERSION
 
 use 5.010;
 use Moo;
@@ -97,7 +97,7 @@ Perinci::CmdLine::dux - Perinci::CmdLine subclass for dux cli
 
 =head1 VERSION
 
-This document describes version 1.47 of Perinci::CmdLine::dux (from Perl distribution App-dux), released on 2014-10-30.
+This document describes version 1.48 of Perinci::CmdLine::dux (from Perl distribution App-dux), released on 2014-12-27.
 
 =head1 DESCRIPTION
 
@@ -119,7 +119,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/App-dux>.
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/perlancar/perl-App-dux>.
+Source repository is at L<https://github.com/sharyanto/perl-App-dux>.
 
 =head1 BUGS
 
